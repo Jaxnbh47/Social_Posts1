@@ -18,7 +18,7 @@ export function SocialPosts() {
   
     return (
       <div>
-        <button onClick={() => setShowForm(true)}>New Thot</button>
+        <button onClick={() => setShowForm(true)}>New Thought</button>
         {showForm && (
           <PostForm
             onSubmit={handleSubmit}

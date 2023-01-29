@@ -12,7 +12,7 @@ export function PostForm({ onSubmit, onClose }: { onSubmit: (post: Post) => void
   
     return (
       <form onSubmit={handleSubmit}>
-        <h2>New Thot</h2>
+        <h2>New Thought</h2>
         <label>
           Title:
           <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
