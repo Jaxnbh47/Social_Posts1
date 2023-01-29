@@ -12,6 +12,11 @@ export function PostForm({ onSubmit, onClose }: { onSubmit: (post: Post) => void
   
     return (
       <form onSubmit={handleSubmit}>
+        <div className="closebutton">
+        <button type="button" onClick={onClose}>
+          X
+        </button>
+        </div>
         <h2>New Thought</h2>
         <label>
           Title:
@@ -22,9 +27,6 @@ export function PostForm({ onSubmit, onClose }: { onSubmit: (post: Post) => void
           <textarea value={thought} onChange={(x) => setThought(x.target.value)} />
         </label>
         <button type="submit">Add Post</button>
-        <button type="button" onClick={onClose}>
-          X
-        </button>
       </form>
     );
   }

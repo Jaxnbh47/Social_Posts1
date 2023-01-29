@@ -29,3 +29,8 @@
     height: 50px;
 }
 
+.closebutton{
+    display: flex;
+    justify-content: flex-end;
+}
+
