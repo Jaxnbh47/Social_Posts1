@@ -15,15 +15,15 @@ export function PostForm({ onSubmit, onClose }: { onSubmit: (post: Post) => void
         <h2>New Thought</h2>
         <label>
           Title:
-          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+          <input type="text" value={title} onChange={(x) => setTitle(x.target.value)} />
         </label>
         <label>
           Thought:
-          <textarea value={thought} onChange={(e) => setThought(e.target.value)} />
+          <textarea value={thought} onChange={(x) => setThought(x.target.value)} />
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit">Add Post</button>
         <button type="button" onClick={onClose}>
-          Close
+          X
         </button>
       </form>
     );

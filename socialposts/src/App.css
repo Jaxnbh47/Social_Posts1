@@ -1,0 +1,31 @@
+.mythoughts {
+    display: flex;
+    justify-content: center;
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    color:#03a9f4;
+    font-size: 80px;
+    margin-top: 0px;
+}
+
+.formstyle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #79c5e8 ;
+    max-width: 500px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.buttonstyle {
+    background-color: #03a9f4 ;
+    color: white;
+    border-radius: 5px;
+    width: 500px;
+    height: 50px;
+}
+
