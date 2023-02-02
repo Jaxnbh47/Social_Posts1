@@ -1,6 +1,6 @@
 import { Post } from "../Post";
 
-export function PostInList({ post, onDelete }: { post: Post; onDelete: () => void }) {
+export function PostInList({post, onDelete}: { post: Post; onDelete: () => void }) {
     return (
       <div>
         <h3>{post.title}</h3>

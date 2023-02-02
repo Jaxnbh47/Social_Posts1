@@ -11,23 +11,26 @@ export function PostForm({ onSubmit, onClose }: { onSubmit: (post: Post) => void
     };
   
     return (
+      <div className="ThoughtForm">
       <form onSubmit={handleSubmit}>
         <div className="closebutton">
-        <button type="button" onClick={onClose}>
+        <button onClick={onClose}>
           X
         </button>
         </div>
         <h2>New Thought</h2>
+        <div className="inputs-style">
         <label>
           Title:
-          <input type="text" value={title} onChange={(x) => setTitle(x.target.value)} />
+          <input type="text" onChange={(e) => setTitle(e.target.value)}></input>
         </label>
         <label>
           Thought:
-          <textarea value={thought} onChange={(x) => setThought(x.target.value)} />
+          <textarea onChange={(e) => setThought(e.target.value)}></textarea>
         </label>
+        </div>
         <button type="submit">Add Post</button>
       </form>
+      </div>
     );
   }
-  

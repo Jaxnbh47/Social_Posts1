@@ -1,18 +1,11 @@
+
 .mythoughts {
     display: flex;
     justify-content: center;
-    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    font-family: "Homemade Apple";
     color:#03a9f4;
-    font-size: 80px;
+    font-size: 50px;
     margin-top: 0px;
-}
-
-.formstyle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #79c5e8 ;
-    max-width: 500px;
 }
 
 .button-container {
@@ -34,3 +27,36 @@
     justify-content: flex-end;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin-left: 10px;
+}
+
+textarea {
+    margin-left: 10px;
+}
+
+.inputs-style {
+    display: flex;
+    justify-content: center;
+}
+
+.ThoughtForm {
+    margin-top: 10px;
+    background-color: #79c5e8 ;
+    border: 1px solid black;
+}
+
+input{
+    display: flex;
+    align-items: flex-start;
+}
+
+textarea {
+    display: flex;
+    align-items: flex-end;
+}
