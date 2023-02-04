@@ -11,7 +11,7 @@ export function SocialPosts() {
     setPosts([...posts, newPost]);
     setShowForm(false);
   };
-
+  
   const handleDelete = (index: number) => {
     setPosts(posts.filter((_, i) => i !== index));
   };
@@ -20,11 +20,12 @@ export function SocialPosts() {
     <div>
       <h1 className="mythoughts">My Thoughts</h1>
       <div>
-        <div className="button-container">
-        <button className="buttonstyle" onClick={() => setShowForm(true)}>
+      <div className="button-container">
+      <button className="buttonstyle" onClick={(e) => setShowForm(true)}>
           New Thought
         </button>
-        </div>
+      </div>
+        
         {showForm && (
           <div className="formstyle">
             <PostForm
